@@ -11,7 +11,7 @@ public class Counter {
     public static class Mythread extends Thread{
         @Override
         public void run() {
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 2; i++) {
                 Thread thread = new Thread(() -> {
                     for (int j = 0; j < 1000; j++) {
                         Counter.increment();
